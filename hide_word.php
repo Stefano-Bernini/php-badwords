@@ -20,7 +20,7 @@
             <div class="col-12">
                 <h1 class="mt-5">La parola da censurare e': <?php echo $to_hide; ?></h1>
                 <h1>ed e' lunga <?php echo strlen($to_hide); ?> caratteri!</h1>
-                <h1 class="mt-5">Questo e' il testo censurato di lunghezza <?php echo strlen($text) ?>:</h1>
+                <h1 class="mt-5">Questo e' il testo censurato lungo <?php echo strlen($text) ?> caratteri:</h1>
                 <h1><?php echo $hidden; ?></h1>
             </div>
         </div>
