@@ -3,6 +3,7 @@
     $to_hide = $_POST['to_hide'];
     $text = $_POST['text'];
 
+    $hidden = str_replace($to_hide, '***', $text);
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +19,9 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="mt-5">La parola da censurare e': <?php echo $to_hide; ?></h1>
-                <h1>ed e' lungo <?php strlen($to_hide) ?> caratteri!</h1>
+                <h1>ed e' lunga <?php echo strlen($to_hide); ?> caratteri!</h1>
                 <h1 class="mt-5">Questo e' il testo censurato di lunghezza <?php echo strlen($text) ?>:</h1>
-                <h1><?php echo $text; ?></h1>
+                <h1><?php echo $hidden; ?></h1>
             </div>
         </div>
     </div>
